@@ -12,6 +12,7 @@ function MainScreen() {
     // when user types an input and presses enter if it matches the data add it as a pill
     // add loading button when get my scripture is clicked
     // add gradient button
+    // MAX 3 emotions legend
 
     return (
         <>
