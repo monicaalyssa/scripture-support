@@ -11,6 +11,7 @@ function MainScreen() {
     // when the nothing found message shows up move button down
     // when user types an input and presses enter if it matches the data add it as a pill
     // add loading button when get my scripture is clicked
+    // add gradient button
 
     return (
         <>
