@@ -1,0 +1,21 @@
+.responsive {
+    max-width: 44vw;
+    width: 44vw;
+
+
+    @media (max-width: $mantine-breakpoint-sm) {
+        max-width: 85vw;
+        width: 85vw;
+    }
+
+    @media (min-width: $mantine-breakpoint-sm) and (max-width: $mantine-breakpoint-md) {
+        max-width: 69vw;
+        width: 69vw;
+    }
+
+    @media (min-width: $mantine-breakpoint-md) and (max-width: $mantine-breakpoint-lg) {
+        max-width: 63vw;
+        width: 63vw;
+    }
+
+}
