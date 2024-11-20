@@ -54,7 +54,7 @@ function MainScreen() {
                         hidePickedOptions
                         comboboxProps={{ transitionProps: { transition: 'pop', duration: 200 } }}
                     />
-                    <Button bg="teal" onClick={alertText} size="md" mt="lg" >Get my scripture<Text mt={1} ml={6} size="22" span>☺️</Text></Button>
+                    <Button bg="teal" onClick={alertText} size="md" mt="lg" >Get my scripture<Text mt={1} ml={6} size="21" span>☺️</Text></Button>
                 </Flex>
             </Container>
         </>
