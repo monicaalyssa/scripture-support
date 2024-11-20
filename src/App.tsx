@@ -4,7 +4,6 @@ import { MantineProvider } from '@mantine/core';
 import MainScreen from './components/MainScreen';
 import GitHub from './components/GitHub';
 
-
 function App() {
 
   return (
@@ -15,4 +14,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
