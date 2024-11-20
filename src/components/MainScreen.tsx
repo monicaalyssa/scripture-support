@@ -10,11 +10,12 @@ function MainScreen() {
     // when user is done adding any amount of items in the input box and presses enter, run get my scripture
     // when the nothing found message shows up move button down
     // when user types an input and presses enter if it matches the data add it as a pill
+    // add loading button when get my scripture is clicked
 
     return (
         <>
             <Container visibleFrom="xs" p="xl">
-                <Title size="md">SCRIPTURE SUPPORT</Title>
+                <Text size="lg" fw={900} variant="gradient" gradient={{ from: 'grape', to: 'cyan', deg: 90 }}>Scripture Support</Text>
                 <Flex direction="column" style={{ minHeight: "80vh" }} m="0" align="center" justify="center">
                     <Title>I'm feeling...</Title>
                     <MultiSelect
@@ -35,7 +36,7 @@ function MainScreen() {
                 </Flex>
             </Container>
             <Container hiddenFrom="xs" p="xl">
-                <Title size="sm">SCRIPTURE SUPPORT</Title>
+                <Text size="lg" fw={900} variant="gradient" gradient={{ from: 'grape', to: 'cyan', deg: 90 }}>Scripture Support</Text>
                 <Flex direction="column" style={{ minHeight: "80vh" }} m="0" align="center" justify="center">
                     <Title order={2} >I'm feeling...</Title>
                     <MultiSelect
