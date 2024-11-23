@@ -82,14 +82,16 @@ function MainScreen() {
                     <>
                         <Scripture setInputScreen={setInputScreen} inputScreen={inputScreen} scripturePicker={scripturePicker} randomScripture={randomScripture} selectedEmotions={selectedEmotions} />
                     </>
-                )}
-                
-                   
+                )}         
                 </Flex>
             </Container>
               <Container hiddenFrom="xs" p="xl">
                 <Text size="lg" fw={900} variant="gradient" gradient={{ from: 'grape', to: 'cyan', deg: 90 }}>Scripture Support</Text>
                 <Flex direction="column" style={{ minHeight: "80vh" }} m="0" align="center" justify="center">
+
+                {inputScreen ? (
+                    <>
+                    
                     <Title order={2} >I'm feeling...</Title>
                     <MultiSelect
                         placeholder="How are you feeling?"
@@ -106,6 +108,11 @@ function MainScreen() {
                         comboboxProps={{ transitionProps: { transition: 'pop', duration: 200 } }}
                     />
                     <Button bg="teal" onClick={alertText} size="md" mt="lg">Get my scripture<Text mt={1} ml={6} size="21" span>☺️</Text></Button>
+                    </>  ) : (
+                    <>
+                        <Scripture setInputScreen={setInputScreen} inputScreen={inputScreen} scripturePicker={scripturePicker} randomScripture={randomScripture} selectedEmotions={selectedEmotions} />
+                    </>
+                )}
                 </Flex>
             </Container>
         </>
