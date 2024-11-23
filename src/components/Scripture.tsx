@@ -9,7 +9,7 @@ interface emotionsProps {
     inputScreen: boolean;
 }
 
-const Scripture: React.FC<emotionsProps> = ({ selectedEmotions, inputScreen, setInputScreen, randomScripture, scripturePicker }) => {
+const Scripture: React.FC<emotionsProps> = ({ inputScreen, setInputScreen, randomScripture, scripturePicker }) => {
 
     const backToHome = () => {
         if (inputScreen === false) {

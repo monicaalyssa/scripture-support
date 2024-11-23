@@ -101,7 +101,7 @@ function MainScreen() {
                     <Title order={2} >I'm feeling...</Title>
                     <MultiSelect
                         placeholder="How are you feeling?"
-                        data={["Sad", "Anxious", "Happy", "Lost", "Betrayed", "Joyful", "Heartbroken", "Scared", "Insecure", "Angry"]}
+                        data={["Sad", "Anxious", "Scared"]}
                         searchable
                         clearable
                         size="md"
