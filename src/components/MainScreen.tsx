@@ -4,6 +4,7 @@ import { useState } from "react";
 import Scripture from "./Scripture";
 import { SAD_SCRIPTURES } from "../constants/scriptures.tsx"
 import { ANXIOUS_SCRIPTURES } from "../constants/scriptures.tsx"
+import { SCARED_SCRIPTURES } from "../constants/scriptures.tsx"
 
 
 function MainScreen() {
@@ -32,6 +33,10 @@ function MainScreen() {
         combinedSciptureLists = [...combinedSciptureLists, ...ANXIOUS_SCRIPTURES];
       }
 
+      if (selectedEmotions.includes("Scared")) {
+        combinedSciptureLists = [...combinedSciptureLists, ...SCARED_SCRIPTURES];
+      }
+
       let randomIndex;
       let selectedScripture;
       do {
@@ -49,6 +54,7 @@ function MainScreen() {
     // add loading button when get my scripture is clicked
     // add gradient button
     // MAX 3 emotions legend
+    // when Jesus is speaking add red text!
 
     return (
         <>
@@ -62,7 +68,7 @@ function MainScreen() {
                     <Title>I'm feeling...</Title>
                     <MultiSelect
                         placeholder="How are you feeling?"
-                        data={["Sad", "Anxious", "Scared"]}
+                        data={["Sad", "Anxious", "Scared", "Placeholder"]}
                         searchable
                         clearable
                         size="lg"
