@@ -15,7 +15,7 @@ export default defineConfig({
       includeAssets: ['favicon.png', 'favicon180.png', 'favicon192.png', 'favicon512.png'],
       manifest: {
         name: "Scripture Support",
-        short_name: "SS",
+        short_name: "Scripture Support",
         description: "Find Comfort and Encouragement in God's Word",
         theme_color: "#ffffff",
         background_color: "#ffffff",

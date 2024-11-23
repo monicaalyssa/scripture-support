@@ -1,6 +1,6 @@
-import { Button, Container, Flex, MultiSelect, Text, Title } from "@mantine/core";
+import { Box, Button, Container, Flex, MultiSelect, Text, Title, Transition } from "@mantine/core";
 import classes from "./MainScreen.module.css"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Scripture from "./Scripture";
 import { SAD_SCRIPTURES } from "../constants/scriptures.tsx"
 import { ANXIOUS_SCRIPTURES } from "../constants/scriptures.tsx"
@@ -12,6 +12,7 @@ function MainScreen() {
     const [inputScreen, setInputScreen] = useState<boolean>(true);
     const [randomScripture, setRandomScriptue] = useState<any | null>(null);
     const [lastScripture, setLastScripture] = useState<any | null>(null);
+    const [mounted, setMounted] = useState<boolean>(false)
 
     function alertText() {
         if (selectedEmotions.length === 0) {
@@ -19,6 +20,7 @@ function MainScreen() {
         } else {
             setInputScreen(false)
             scripturePicker();
+            setMounted(false) 
         }
     }
 
@@ -47,6 +49,10 @@ function MainScreen() {
       setLastScripture(selectedScripture);
     };
 
+    useEffect(() => {
+        setMounted(true)
+    }, []);
+
     // add emotions happy, lost, betrayed, joyful, heartbroke, insecure, and angry
     // when user is done adding any amount of items in the input box and presses enter, run get my scripture
     // when the nothing found message shows up move button down
@@ -62,9 +68,11 @@ function MainScreen() {
             <Container visibleFrom="xs" px="xl" pb="xl">
                 <Text size="lg" mt="xs" fw={900} variant="gradient" gradient={{ from: 'grape', to: 'cyan', deg: 90 }}>Scripture Support</Text>
                 <Flex direction="column" style={{ minHeight: "78vh" }} m="0" align="center" justify="center">
-                    
                 {inputScreen ? (
                     <>
+                    <Transition transition="fade-up" mounted={mounted} duration={400}>
+                    {(styles) => (
+                    <Box style={styles}>
                     <Title>I'm feeling...</Title>
                     <MultiSelect
                         placeholder="How are you feeling?"
@@ -83,11 +91,17 @@ function MainScreen() {
                         comboboxProps={{ transitionProps: { transition: 'pop', duration: 200 } }}
                     />
                     <Button bg="teal" onClick={alertText} size="lg" mt="xl" >Get my scripture<Text mt={1} ml={6} size="22" span>☺️</Text></Button>
+
+                    </Box>
+                    )}
+                    </Transition>
                     </>  ) : (
                     <>
-                        <Scripture setInputScreen={setInputScreen} inputScreen={inputScreen} scripturePicker={scripturePicker} randomScripture={randomScripture} selectedEmotions={selectedEmotions} />
+                        <Scripture setMounted={setMounted} setInputScreen={setInputScreen} inputScreen={inputScreen} scripturePicker={scripturePicker} randomScripture={randomScripture} selectedEmotions={selectedEmotions} />
+
                     </>
-                )}         
+ 
+            )}
                 </Flex>
             </Container>
               <Flex mt={-20} direction="column" style={{ minHeight: "80vh" }} hiddenFrom="xs" p="sm" pb="xs">
@@ -96,7 +110,9 @@ function MainScreen() {
 
                 {inputScreen ? (
                     <>
-                    
+                    <Transition transition="fade-up" mounted={mounted} duration={400}>
+                    {(styles) => (
+                    <Box style={styles}>
                     <Title order={2} >I'm feeling...</Title>
                     <MultiSelect
                         placeholder="How are you feeling?"
@@ -115,9 +131,13 @@ function MainScreen() {
                         comboboxProps={{ transitionProps: { transition: 'pop', duration: 200 } }}
                     />
                     <Button bg="teal" onClick={alertText} size="md" mt="lg">Get my scripture<Text mt={1} ml={6} size="21" span>☺️</Text></Button>
+                    </Box>
+                    )}
+                    </Transition>
+                    
                     </>  ) : (
                     <>
-                        <Scripture setInputScreen={setInputScreen} inputScreen={inputScreen} scripturePicker={scripturePicker} randomScripture={randomScripture} selectedEmotions={selectedEmotions} />
+                        <Scripture setMounted={setMounted} setInputScreen={setInputScreen} inputScreen={inputScreen} scripturePicker={scripturePicker} randomScripture={randomScripture} selectedEmotions={selectedEmotions} />
                     </>
                 )}
                 </Flex>
