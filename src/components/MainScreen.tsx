@@ -8,7 +8,7 @@ import { ANXIOUS_SCRIPTURES } from "../constants/scriptures.tsx"
 
 function MainScreen() {
     const [selectedEmotions, setSelectedEmotions] = useState<string[]>([]);
-    const [inputScreen, setInputScreen] = useState(true);
+    const [inputScreen, setInputScreen] = useState<boolean>(true);
     const [randomScripture, setRandomScriptue] = useState<any | null>(null);
     const [lastScripture, setLastScripture] = useState<any | null>(null);
 
@@ -80,7 +80,7 @@ function MainScreen() {
                     <Button bg="teal" onClick={alertText} size="lg" mt="xl" >Get my scripture<Text mt={1} ml={6} size="22" span>☺️</Text></Button>
                     </>  ) : (
                     <>
-                        <Scripture scripturePicker={scripturePicker} randomScripture={randomScripture} selectedEmotions={selectedEmotions} />
+                        <Scripture setInputScreen={setInputScreen} inputScreen={inputScreen} scripturePicker={scripturePicker} randomScripture={randomScripture} selectedEmotions={selectedEmotions} />
                     </>
                 )}
                 
