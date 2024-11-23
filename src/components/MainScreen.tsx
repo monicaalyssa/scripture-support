@@ -90,9 +90,9 @@ function MainScreen() {
                 )}         
                 </Flex>
             </Container>
-              <Container hiddenFrom="xs" p="xl">
+              <Flex direction="column" style={{ minHeight: "91vh" }} hiddenFrom="xs" p="lg">
                 <Text size="lg" fw={900} variant="gradient" gradient={{ from: 'grape', to: 'cyan', deg: 90 }}>Scripture Support</Text>
-                <Flex direction="column" style={{ minHeight: "80vh" }} m="0" align="center" justify="center">
+                <Flex direction="column" flex={1}  m="0" align="center" justify="center">
 
                 {inputScreen ? (
                     <>
@@ -121,7 +121,7 @@ function MainScreen() {
                     </>
                 )}
                 </Flex>
-            </Container>
+            </Flex>
         </>
     );
 }
