@@ -5,8 +5,7 @@
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
     "display": "standalone",
-    "start_url": "/scripture-support/",
-    "id": "/scripture-support/",
+    "start_url": ".",
     "icons": [
       {
         "src": "./favicon192.png",
