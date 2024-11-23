@@ -5,3 +5,11 @@ export const SAD_SCRIPTURES = [
         verse: "Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go."
     },
 ]
+
+export const ANXIOUS_SCRIPTURES = [
+    {
+        location: "anxious test",
+        translation: "NIV",
+        verse: "test"
+    },
+]
