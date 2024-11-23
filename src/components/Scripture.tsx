@@ -23,7 +23,7 @@ const Scripture: React.FC<emotionsProps> = ({ inputScreen, setInputScreen, rando
         <>
         <Box visibleFrom="xs">
         { randomScripture ? (
-            <Box mb="xl" pb="md" pt="md" mt="xl"> 
+            <Box mb="xl" pb="md" pt="md" mt="md"> 
                 <Title order={3}>"{randomScripture.verse}"</Title>
                 <Flex mt="lg" direction="row" align="center" justify="center" gap={6}>
                 <Text  size="xl">({randomScripture.location}</Text> 
@@ -44,22 +44,21 @@ const Scripture: React.FC<emotionsProps> = ({ inputScreen, setInputScreen, rando
 
         <Box hiddenFrom="xs">
         { randomScripture ? (
-            <Box mb="lg" pb="sm" pt="md" mt="xl"> 
+            <Box mb="lg" pb="sm" pt="xs" mt={0}> 
                 <Title order={4}>"{randomScripture.verse}"</Title>
-                <Flex mt="lg" direction="row" align="center" justify="center" gap={6}>
-                <Text  size="md">({randomScripture.location}</Text> 
+                <Flex mt="md" direction="row" align="center" justify="center" gap={6}>
+                <Text size="md">({randomScripture.location}</Text> 
                 <Text c="blue" size="md">{randomScripture.translation}<Text size="md" c="#000" span>)</Text></Text>
                 </Flex>
             </Box>
         ) : (
             <p>Please select emotions and try again.</p>
         )}
-        <Flex justify="center" gap="md" >
-        <Button size="sm" onClick={backToHome} style={{alignItems: "center"}}  rightSection={<IconMoodPlus  style={{marginLeft: "-0.2rem" }}  stroke={2.2} size={20} />} variant="light">I'm feeling different</Button>
+        <Flex direction="column" justify="center" gap="xs">
+        <Button size="sm" onClick={backToHome} style={{alignItems: "center"}}  rightSection={<IconMoodPlus  style={{marginLeft: "-0.3rem" }}  stroke={2.2} size={18} />} variant="light">I'm feeling different</Button>
         <Button size="sm" onClick={scripturePicker} >Give Me Another <Text mt={1} ml={6} span>✨</Text></Button>
         </Flex>
         </Box>
-
         </>
     )
 }
