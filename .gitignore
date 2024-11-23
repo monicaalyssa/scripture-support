@@ -12,6 +12,10 @@ dist
 dist-ssr
 *.local
 
+src/analytics.ts
+
+dev-dist/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

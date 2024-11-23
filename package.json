@@ -17,7 +17,8 @@
     "@mantine/hooks": "^7.14.1",
     "@tabler/icons-react": "^3.22.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-ga4": "^2.1.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",

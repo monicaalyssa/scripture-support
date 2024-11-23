@@ -36,8 +36,6 @@ const Scripture: React.FC<emotionsProps> = ({ inputScreen, setMounted, setInputS
         }, 300);
     }
 
-    // add responsive text size and button size for mobile version
-
     return(
         <>
         <Transition transition="fade-up" mounted={sciptureMounted} duration={400}>

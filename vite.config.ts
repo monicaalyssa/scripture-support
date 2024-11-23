@@ -18,16 +18,17 @@ export default defineConfig({
         short_name: "Scripture Support",
         description: "Find Comfort and Encouragement in God's Word",
         theme_color: "#ffffff",
+        start_url: ".",
         background_color: "#ffffff",
         display: "standalone",
         icons: [
           {
-            src: "/favicon192.png",
+            src: "/scripture-support/favicon192.png",
             sizes: "192x192",
             type: "image/png"
           },
           {
-            src: "/favicon512.png",
+            src: "/scripture-support/favicon512.png",
             sizes: "512x512",
             type: "image/png"
           }
