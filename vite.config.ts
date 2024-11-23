@@ -12,7 +12,7 @@ export default defineConfig({
       devOptions: {
         enabled: true
       },
-      includeAssets: ['favicon.png', 'favicon180.png'],
+      includeAssets: ['favicon.png', 'favicon180.png', 'favicon192.png', 'favicon512.png'],
       manifest: {
         name: "Scripture Support",
         short_name: "SS",
