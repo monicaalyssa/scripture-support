@@ -78,7 +78,6 @@ function MainScreen() {
                         nothingFoundMessage="Nothing found, try one of the options from the menu :-)"
                         maxValues={3}
                         value={selectedEmotions}
-
                         onChange={setSelectedEmotions}
                         hidePickedOptions
                         comboboxProps={{ transitionProps: { transition: 'pop', duration: 200 } }}
@@ -107,6 +106,8 @@ function MainScreen() {
                         size="md"
                         mt="lg"
                         radius="lg"
+                        value={selectedEmotions}
+                        onChange={setSelectedEmotions}
                         className={classes.responsive}
                         nothingFoundMessage="Nothing found, try one of the options from the menu :-)"
                         maxValues={3}
