@@ -8,12 +8,18 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  border: 0
 }
 
 body {
   margin: 0;
   display: flex;
   place-items: center;
+  min-height: 100vh;
+  border: 0;
+  @media (max-width: $mantine-breakpoint-xs) {
+    min-height: 100svh;
+  }
 }
 
 @media (prefers-color-scheme: light) {

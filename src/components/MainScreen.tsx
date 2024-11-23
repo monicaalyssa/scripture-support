@@ -59,9 +59,9 @@ function MainScreen() {
     return (
         <>
         
-            <Container visibleFrom="xs" p="xl">
-                <Text size="lg" fw={900} variant="gradient" gradient={{ from: 'grape', to: 'cyan', deg: 90 }}>Scripture Support</Text>
-                <Flex direction="column" style={{ minHeight: "80vh" }} m="0" align="center" justify="center">
+            <Container visibleFrom="xs" px="xl" pb="xl">
+                <Text size="lg" mt="xs" fw={900} variant="gradient" gradient={{ from: 'grape', to: 'cyan', deg: 90 }}>Scripture Support</Text>
+                <Flex direction="column" style={{ minHeight: "78vh" }} m="0" align="center" justify="center">
                     
                 {inputScreen ? (
                     <>
@@ -90,7 +90,7 @@ function MainScreen() {
                 )}         
                 </Flex>
             </Container>
-              <Flex direction="column" style={{ minHeight: "91vh" }} hiddenFrom="xs" p="lg">
+              <Flex mt={-20} direction="column" style={{ minHeight: "80vh" }} hiddenFrom="xs" p="sm" pb="xs">
                 <Text size="lg" fw={900} variant="gradient" gradient={{ from: 'grape', to: 'cyan', deg: 90 }}>Scripture Support</Text>
                 <Flex direction="column" flex={1}  m="0" align="center" justify="center">
 

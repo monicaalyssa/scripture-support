@@ -23,7 +23,7 @@ const Scripture: React.FC<emotionsProps> = ({ inputScreen, setInputScreen, rando
         <>
         <Box visibleFrom="xs">
         { randomScripture ? (
-            <Box mb="xl" pb="md" pt="md" mt="md"> 
+            <Box mb="xl" pb="md" pt="sm" mt="sm"> 
                 <Title order={3}>"{randomScripture.verse}"</Title>
                 <Flex mt="lg" direction="row" align="center" justify="center" gap={6}>
                 <Text  size="xl">({randomScripture.location}</Text> 
@@ -44,7 +44,7 @@ const Scripture: React.FC<emotionsProps> = ({ inputScreen, setInputScreen, rando
 
         <Box hiddenFrom="xs">
         { randomScripture ? (
-            <Box mb="lg" pb="sm" pt="xs" mt={0}> 
+            <Box mb="lg" pb="sm" mt="xs"> 
                 <Title order={4}>"{randomScripture.verse}"</Title>
                 <Flex mt="md" direction="row" align="center" justify="center" gap={6}>
                 <Text size="md">({randomScripture.location}</Text> 
