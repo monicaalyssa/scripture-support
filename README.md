@@ -41,6 +41,6 @@ Scripture Support is a Progressive Web App that offers comfort through God's Wor
 
 <a href="https://vite-pwa-org.netlify.app/">Vite-Plugin-PWA</a>: Enhances the application with Progressive Web App (PWA) capabilities, providing offline functionality, automatic service worker generation and updates, and home screen installation for an app-like experience.
 
-## UI Components
+### UI Components
 
 <a href="https://mantine.dev/">Mantine</a>: React component library that provides customizable components to quickly and efficiently build the UI components of the app.
