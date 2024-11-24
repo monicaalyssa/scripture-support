@@ -1,15 +1,20 @@
 import { Container, Flex, Text} from "@mantine/core";
 import { ReactNode } from "react";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 interface childrenProps {
     children: ReactNode; 
 }
 
 const MainScreen: React.FC<childrenProps> = ({ children }) => {
-
+    const navigate = useNavigate();
     const firstChild = React.Children.toArray(children)[0];
     const secondChild = React.Children.toArray(children)[1];
+
+    const clickTitle = () => {
+        navigate('/');
+    }
 
     // add emotions happy, lost, betrayed, joyful, heartbroke, insecure, and angry
     // when user is done adding any amount of items in the input box and presses enter, run get my scripture
@@ -28,14 +33,14 @@ const MainScreen: React.FC<childrenProps> = ({ children }) => {
     return (
         <>
             <Container visibleFrom="xs" px="xl" pb="xl">
-                <Text size="lg" mt="xs" fw={900} variant="gradient" gradient={{ from: 'grape', to: 'cyan', deg: 90 }}>Scripture Support</Text>
+                <Text onClick={clickTitle} style={{ cursor: "pointer"}} size="lg" mt="xs" fw={900} variant="gradient" gradient={{ from: 'grape', to: 'cyan', deg: 90 }}>Scripture Support</Text>
                 <Flex visibleFrom="xs" direction="column" style={{ minHeight: "73vh" }} m="0" align="center" justify="center">
                 {firstChild}
                 </Flex>
             </Container>
 
             <Flex mt={-20} direction="column" style={{ minHeight: "75vh" }} hiddenFrom="xs" p="sm" pb="xs">
-            <Text size="lg" fw={900} variant="gradient" gradient={{ from: "grape", to: "cyan", deg: 90 }}>
+            <Text size="lg" onClick={clickTitle} style={{ cursor: "pointer"}} fw={900} variant="gradient" gradient={{ from: "grape", to: "cyan", deg: 90 }}>
                 Scripture Support
              </Text>
              <Flex direction="column" flex={1} m="0" align="center" justify="center">
