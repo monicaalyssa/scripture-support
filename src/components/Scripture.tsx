@@ -61,7 +61,7 @@ const Scripture: React.FC<emotionsProps> = ({ inputScreen, setMounted, setInputS
             <p>Please select emotions and try again.</p>
         )}
         <Flex justify="center" gap="md" >
-        <Button size="md" onClick={backToHome} style={{alignItems: "center"}}  rightSection={<IconMoodPlus  style={{marginLeft: "-0.2rem" }}  stroke={2.2} size={20} />} variant="light">I'm feeling different</Button>
+        <Button size="md" onClick={backToHome} style={{alignItems: "center"}}  rightSection={<IconMoodPlus  style={{marginLeft: "-0.2rem" }}  stroke={2.2} size={20} />} variant="light">Add Feelings</Button>
         <Button size="md" onClick={giveMeAnother} >Give Me Another <Text mt={1} ml={6} span>✨</Text></Button>
         </Flex>
         </Box>
@@ -89,7 +89,7 @@ const Scripture: React.FC<emotionsProps> = ({ inputScreen, setMounted, setInputS
             <p>Please select emotions and try again.</p>
         )}
         <Flex direction="column" justify="center" gap="xs">
-        <Button size="sm" onClick={backToHome} style={{alignItems: "center"}}  rightSection={<IconMoodPlus  style={{marginLeft: "-0.3rem" }}  stroke={2.2} size={18} />} variant="light">I'm feeling different</Button>
+        <Button size="sm" onClick={backToHome} style={{alignItems: "center"}}  rightSection={<IconMoodPlus  style={{marginLeft: "-0.3rem" }}  stroke={2.2} size={18} />} variant="light">Add Feelings</Button>
         <Button size="sm" onClick={giveMeAnother} >Give Me Another <Text mt={1} ml={6} span>✨</Text></Button>
         </Flex>
         </Box>
