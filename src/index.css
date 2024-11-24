@@ -8,7 +8,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  border: 0
+  border: 0;
 }
 
 body {

@@ -7,9 +7,9 @@ export const SAD_SCRIPTURES = [
         verse: "Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go."
     },
     {
-        location: "2 Corinthians 12:9-10",
+        location: "2 Corinthians 12:10",
         translation: "NIV",
-        verse: "But he said to me, \"My grace is sufficient for you, for my power is made perfect in weakness.\" Therefore I will boat all the more gladly about my weakness, so that Christ's power may rest on me. That is why, for Christ's sake, I delight in weaknesses, in insults, in hardships, in persecutions, in difficulties. For when I am weak, then I am strong."
+        verse: "For when I am weak, then I am strong."
     },
     {
         location: "Psalms 46:1",
@@ -25,9 +25,9 @@ export const SAD_SCRIPTURES = [
 
 export const ANXIOUS_SCRIPTURES = [
     {
-        location: "2 Corinthians 12:9-10",
+        location: "2 Corinthians 12:10",
         translation: "NIV",
-        verse: "But he said to me, \"My grace is sufficient for you, for my power is made perfect in weakness.\" Therefore I will boast all the more gladly about my weakness, so that Christ's power may rest on me. That is why, for Christ's sake, I delight in weaknesses, in insults, in hardships, in persecutions, in difficulties. For when I am weak, then I am strong."
+        verse: "For when I am weak, then I am strong."
     },
     {
         location: "2 Corinthians 10:4-5",
@@ -68,14 +68,14 @@ export const ANXIOUS_SCRIPTURES = [
 
 export const SCARED_SCRIPTURES = [
     {
-        location: "2 Corinthians 12:9-10",
+        location: "2 Corinthians 12:10",
         translation: "NIV",
-        verse: "But he said to me, \"My grace is sufficient for you, for my power is made perfect in weakness.\" Therefore I will boast all the more gladly about my weakness, so that Christ's power may rest on me. That is why, for Christ's sake, I delight in weaknesses, in insults, in hardships, in persecutions, in difficulties. For when I am weak, then I am strong."
+        verse: "For when I am weak, then I am strong."
     },
     {
-        location: "2 Corinthians 10:4-5",
+        location: "2 Corinthians 10:4",
         translation: "NIV",
-        verse: "The weapons we fight with are not the weapons of the world. On the contrary, they have divine power to demolish strongholds. We demolish arguments and every pretension that sets itself up against the knowledge of God, and we take captive every thought to make it obedient to Christ."
+        verse: "The weapons we fight with are not the weapons of the world. On the contrary, they have divine power to demolish strongholds."
     },
     {
         location: "2 Thessalonians 3:3",

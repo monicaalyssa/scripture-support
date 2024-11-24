@@ -59,8 +59,12 @@ function MainScreen() {
     // when user types an input and presses enter if it matches the data add it as a pill
     // add loading button when get my scripture is clicked
     // add gradient button
-    // MAX 3 emotions legend
+    // MAX 3 emotions legend OR warning notificaiton
     // when Jesus is speaking add red text!
+    // add download as pwa button
+    // add copy scritpure button, and maybe save as image
+    // pwa logic to show a "new version available" prompt so users can refresh the app
+    // on smaller verses on mobile the button does not take full width
 
     return (
         <>
