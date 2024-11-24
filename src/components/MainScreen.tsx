@@ -65,6 +65,7 @@ function MainScreen() {
     // add copy scritpure button, and maybe save as image
     // pwa logic to show a "new version available" prompt so users can refresh the app
     // on smaller verses on mobile the button does not take full width
+    // add resources section like the bible app, bibleproject, etc
 
     return (
         <>

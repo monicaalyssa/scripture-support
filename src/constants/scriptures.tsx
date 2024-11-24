@@ -32,7 +32,7 @@ export const ANXIOUS_SCRIPTURES = [
     {
         location: "2 Corinthians 10:4-5",
         translation: "NIV",
-        verse: "The weapons we fight with are not the weapons of the world. On the contrary, they have divine power to demolish strongholds. We demolish arguments and every pretension that sets itself up against the knowledge of God, and we take captive every thought to make it obedient to Christ."
+        verse: "The weapons we fight with are not the weapons of the world. On the contrary, they have divine power to demolish strongholds."
     },
     {
         location: "2 Corinthians 1:3-4",
