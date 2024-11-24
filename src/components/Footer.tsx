@@ -2,7 +2,7 @@ import { ActionIcon, Flex, Image, Text, Tooltip } from "@mantine/core";
 import githubLogo from "../assets/github.svg"
 import { Link } from "react-router-dom";
 
-function GitHub() {
+function Footer() {
 
     return (
         <Flex justify="center" direction="column" gap={5} align="center">
@@ -20,4 +20,4 @@ function GitHub() {
         )
 }
 
-export default GitHub;
+export default Footer;
