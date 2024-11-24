@@ -1,0 +1,14 @@
+.link {
+    text-decoration: none;
+    transition: text-decoration 3s ease;
+}
+
+.link:hover {
+    text-underline-offset: 5px;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+.link:active {
+    text-decoration: none;
+}

@@ -1,12 +1,15 @@
 import { Container, Flex, Text} from "@mantine/core";
 import { ReactNode } from "react";
-import MobileComponent from "./MobileComponent";
+import React from "react";
 
 interface childrenProps {
     children: ReactNode; 
 }
 
 const MainScreen: React.FC<childrenProps> = ({ children }) => {
+
+    const firstChild = React.Children.toArray(children)[0];
+    const secondChild = React.Children.toArray(children)[1];
 
     // add emotions happy, lost, betrayed, joyful, heartbroke, insecure, and angry
     // when user is done adding any amount of items in the input box and presses enter, run get my scripture
@@ -27,7 +30,7 @@ const MainScreen: React.FC<childrenProps> = ({ children }) => {
             <Container visibleFrom="xs" px="xl" pb="xl">
                 <Text size="lg" mt="xs" fw={900} variant="gradient" gradient={{ from: 'grape', to: 'cyan', deg: 90 }}>Scripture Support</Text>
                 <Flex visibleFrom="xs" direction="column" style={{ minHeight: "73vh" }} m="0" align="center" justify="center">
-                {children}
+                {firstChild}
                 </Flex>
             </Container>
 
@@ -35,7 +38,9 @@ const MainScreen: React.FC<childrenProps> = ({ children }) => {
             <Text size="lg" fw={900} variant="gradient" gradient={{ from: "grape", to: "cyan", deg: 90 }}>
                 Scripture Support
              </Text>
-             <MobileComponent></MobileComponent>
+             <Flex direction="column" flex={1} m="0" align="center" justify="center">
+                {secondChild}
+            </Flex>
             </Flex>
         </>
     );

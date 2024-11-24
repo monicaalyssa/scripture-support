@@ -9,6 +9,7 @@ import ReactGA from 'react-ga4';
 import { HashRouter as BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom';
 import MainContent from './components/MainContent';
 import Resources from './components/Resources';
+import MobileComponent from './components/MobileComponent';
 
 type InstallChoiceResult = {
   outcome: 'accepted' | 'dismissed';
@@ -77,6 +78,7 @@ function App() {
         <>
         <AppLayout>
           <MainContent />
+          <MobileComponent />
         </AppLayout>
         <Footer />
         </>
@@ -88,6 +90,7 @@ function App() {
       element={
         <>
         <AppLayout>
+          <Resources />
           <Resources />
         </AppLayout>
         <Footer />

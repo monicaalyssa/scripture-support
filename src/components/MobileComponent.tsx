@@ -54,7 +54,6 @@ const MobileComponent = () => {
 
   return (
     <>
-        <Flex direction="column" flex={1} m="0" align="center" justify="center">
           {inputScreen ? (
             <>
               <Transition transition="fade-up" mounted={mounted} duration={400}>
@@ -99,7 +98,6 @@ const MobileComponent = () => {
               />
             </>
           )}
-        </Flex>
     </>
   );
 };
