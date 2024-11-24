@@ -2,7 +2,6 @@
     max-width: 44vw;
     width: 44vw;
 
-
     @media (max-width: $mantine-breakpoint-sm) {
         max-width: 85vw;
         width: 85vw;

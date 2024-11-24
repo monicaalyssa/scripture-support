@@ -1,11 +1,15 @@
 import './App.css'
 import '@mantine/core/styles.css';
 import { MantineProvider } from '@mantine/core';
-import MainScreen from './components/MainScreen';
+import AppLayout from './components/AppLayout';
 import GitHub from './components/GitHub';
 import { initializeGA, trackPageView } from './analytics'
 import { useEffect, useRef } from 'react';
 import ReactGA from 'react-ga4';
+import { HashRouter as BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom';
+import MainContent from './components/MainContent';
+import MobileComponent from './components/MobileComponent';
+import Resources from './components/Resources';
 
 type InstallChoiceResult = {
   outcome: 'accepted' | 'dismissed';
@@ -64,10 +68,32 @@ function App() {
    {/* <button onClick={() => deferredPrompt.prompt()}>Install PWA</button> */}
 
   return (
+    <HashRouter>
     <MantineProvider>
-      <MainScreen></MainScreen>
-      <GitHub></GitHub>
+      <Routes>
+      <Route path='/'
+      element={
+        <>
+        <AppLayout>
+        <MainContent />
+        </AppLayout>
+        <GitHub />
+        </>
+      }>
+      </Route>
+      <Route path='resources'
+      element={
+        <>
+        <AppLayout>
+          <Resources></Resources>
+        </AppLayout>
+        <GitHub></GitHub>
+        </>
+      }>
+      </Route>
+      </Routes>
     </MantineProvider>
+    </HashRouter>
     
   )
 }
