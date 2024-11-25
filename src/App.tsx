@@ -2,14 +2,14 @@ import './App.css'
 import '@mantine/core/styles.css';
 import { MantineProvider } from '@mantine/core';
 import AppLayout from './components/AppLayout';
-import Footer from './components/Footer';
+import Footer from './components/Footer/Footer';
 import { initializeGA, trackPageView } from './analytics'
 import { useEffect, useRef } from 'react';
 import ReactGA from 'react-ga4';
 import { Routes, Route, HashRouter } from 'react-router-dom';
-import MainContent from './components/MainContent';
-import Resources from './components/Resources';
-import MobileComponent from './components/MobileComponent';
+import MainContent from './components/Input Screen/MainContent';
+import Resources from './components/Resources Screen/Resources';
+import MobileComponent from './components/Input Screen/MobileComponent';
 
 type InstallChoiceResult = {
   outcome: 'accepted' | 'dismissed';

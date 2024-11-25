@@ -1,9 +1,9 @@
 import { Box, Button, MultiSelect, Text, Title, Transition } from "@mantine/core";
-import Scripture from "./Scripture";
+import Scripture from "../Scripture Screen/Scripture.tsx";
 import { useEffect, useState } from "react";
-import { SAD_SCRIPTURES } from "../constants/scriptures.tsx";
-import { ANXIOUS_SCRIPTURES } from "../constants/scriptures.tsx";
-import { SCARED_SCRIPTURES } from "../constants/scriptures.tsx";
+import { SAD_SCRIPTURES } from "../../constants/scriptures.tsx";
+import { ANXIOUS_SCRIPTURES } from "../../constants/scriptures.tsx";
+import { SCARED_SCRIPTURES } from "../../constants/scriptures.tsx";
 import classes from "./MainScreen.module.css";
 
 function MainContent() {

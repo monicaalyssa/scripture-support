@@ -1,5 +1,5 @@
 import { ActionIcon, Flex, Image, Text, Tooltip } from "@mantine/core";
-import githubLogo from "../assets/github.svg"
+import githubLogo from "../../assets/github.svg"
 import { Link } from "react-router-dom";
 import classes from "./Footer.module.css"
 
