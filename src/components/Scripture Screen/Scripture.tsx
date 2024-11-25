@@ -13,7 +13,7 @@ interface emotionsProps {
 }
 
 const Scripture: React.FC<emotionsProps> = ({ inputScreen, setMounted, setInputScreen, randomScripture, scripturePicker }) => {
-    const [sciptureMounted, setScriptureMounted] = useState<boolean>(false)
+    const [scriptureMounted, setScriptureMounted] = useState<boolean>(false)
     const [newScriptureMounted, setNewScriptureMounted] = useState<boolean>(true)
     const [copied, setCopied] = useState<boolean>(false)
 
@@ -49,7 +49,7 @@ const Scripture: React.FC<emotionsProps> = ({ inputScreen, setMounted, setInputS
 
     return(
         <>
-        <Transition transition="fade-up" mounted={sciptureMounted} duration={400}>
+        <Transition transition="fade-up" mounted={scriptureMounted} duration={400}>
         {(styles) => (
         <Box style={styles}>
         <Box visibleFrom="xs">
@@ -83,7 +83,7 @@ const Scripture: React.FC<emotionsProps> = ({ inputScreen, setMounted, setInputS
         )}
         </Transition>
 
-        <Transition transition="fade-up" mounted={sciptureMounted} duration={400}>
+        <Transition transition="fade-up" mounted={scriptureMounted} duration={400}>
         {(styles) => (
         <Box style={styles}>
         <Box hiddenFrom="xs">

@@ -13,7 +13,7 @@
 
 <img src="public/favicon.png" alt="Logo" width="80" height="80">
 
-<h3 align="center">Scipture Support</h3>
+<h3 align="center">Scripture Support</h3>
 
 <p align="center">
 Scripture Support offers comfort through God's Word. Receive a personalized Bible verse based on your current feelings from the input box, to encourage and uplift you. The app design ensures a comforting experience that you can rely on anytime, anywhere.
@@ -38,7 +38,7 @@ Scripture Support offers comfort through God's Word. Receive a personalized Bibl
 
 
 ### Frontend
-<a href="https://react.dev/">React</a>: The core framework for building dynamic UI components, managing views between the input box and the scripture view, and scipture generation based on user input data.
+<a href="https://react.dev/">React</a>: The core framework for building dynamic UI components, managing views between the input box and the scripture view, and scripture generation based on user input data.
 
 <a href="https://vite.dev/">Vite</a>: Accelerates development and optimizes asset bundling. During development, it provides instant updates without the need for page reloads.
 

@@ -10,7 +10,7 @@ import classes from "./MainScreen.module.css";
 const MobileComponent = () => {
   const [selectedEmotions, setSelectedEmotions] = useState<string[]>([]);
   const [inputScreen, setInputScreen] = useState<boolean>(true);
-  const [randomScripture, setRandomScriptue] = useState<any | null>(null);
+  const [randomScripture, setRandomScripture] = useState<any | null>(null);
   const [lastScripture, setLastScripture] = useState<any | null>(null);
   const [mounted, setMounted] = useState<boolean>(false);
 
@@ -25,31 +25,31 @@ const MobileComponent = () => {
   }
 
   const scripturePicker = () => {
-    let combinedSciptureLists: any[] = [];
+    let combinedScriptureLists: any[] = [];
 
     if (selectedEmotions.includes("Sad")) {
-      combinedSciptureLists = [...combinedSciptureLists, ...SAD_SCRIPTURES];
+      combinedScriptureLists = [...combinedScriptureLists, ...SAD_SCRIPTURES];
     }
 
     if (selectedEmotions.includes("Anxious")) {
-      combinedSciptureLists = [...combinedSciptureLists, ...ANXIOUS_SCRIPTURES];
+      combinedScriptureLists = [...combinedScriptureLists, ...ANXIOUS_SCRIPTURES];
     }
 
     if (selectedEmotions.includes("Scared")) {
-      combinedSciptureLists = [...combinedSciptureLists, ...SCARED_SCRIPTURES];
+      combinedScriptureLists = [...combinedScriptureLists, ...SCARED_SCRIPTURES];
     }
 
     if (selectedEmotions.includes("Heartbroken")) {
-      combinedSciptureLists = [...combinedSciptureLists, ...HEARTBROKEN_SCRIPTURES];
+      combinedScriptureLists = [...combinedScriptureLists, ...HEARTBROKEN_SCRIPTURES];
     }
 
     let randomIndex;
     let selectedScripture;
     do {
-      randomIndex = Math.floor(Math.random() * combinedSciptureLists.length);
-      selectedScripture = combinedSciptureLists[randomIndex];
+      randomIndex = Math.floor(Math.random() * combinedScriptureLists.length);
+      selectedScripture = combinedScriptureLists[randomIndex];
     } while (selectedScripture === lastScripture);
-    setRandomScriptue(selectedScripture);
+    setRandomScripture(selectedScripture);
     setLastScripture(selectedScripture);
   };
 

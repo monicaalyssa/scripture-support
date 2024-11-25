@@ -16,19 +16,10 @@ const MainScreen: React.FC<childrenProps> = ({ children }) => {
         navigate('/');
     }
 
-    // add emotions happy, lost, betrayed, joyful, heartbroke, insecure, and angry
-    // when user is done adding any amount of items in the input box and presses enter, run get my scripture
-    // when the nothing found message shows up move button down
     // when user types an input and presses enter if it matches the data add it as a pill
-    // add loading button when get my scripture is clicked
     // add gradient button
-    // MAX 3 emotions legend OR warning notificaiton
-    // when Jesus is speaking add red text!
-    // add download as pwa button
-    // add copy scritpure button, and maybe save as image
-    // pwa logic to show a "new version available" prompt so users can refresh the app
-    // on smaller verses on mobile the button does not take full width
-    // add resources section like the bible app, bibleproject, etc
+    // MAX 3 emotions legend OR warning notification
+    // add download/install as pwa button or popup
 
     return (
         <>
