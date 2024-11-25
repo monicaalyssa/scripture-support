@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 import { initializeGA, trackPageView } from './analytics'
 import { useEffect, useRef } from 'react';
 import ReactGA from 'react-ga4';
-import { HashRouter as BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import MainContent from './components/MainContent';
 import Resources from './components/Resources';
 import MobileComponent from './components/MobileComponent';

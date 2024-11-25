@@ -1,4 +1,4 @@
-import { Box, Button, Flex, MultiSelect, Text, Title, Transition } from "@mantine/core";
+import { Box, Button, MultiSelect, Text, Title, Transition } from "@mantine/core";
 import Scripture from "./Scripture";
 import { useEffect, useState } from "react";
 import { SAD_SCRIPTURES } from "../constants/scriptures.tsx";

@@ -1,12 +1,19 @@
-import { Text } from "@mantine/core"
+import { Grid } from "@mantine/core";
+import ResourceItem from "./ResourceItem";
 
-const Resources = () => {
+function Resources() {
+  return (
+    <>
+      <Grid justify="space-between" visibleFrom="md" > 
+        <ResourceItem></ResourceItem>
+      </Grid>
 
-    return (
-        <>
-        <Text>Hello Resources!</Text>
-        </>
-    )
-}
+      <Grid px="xl" mx="xl" justify="center" hiddenFrom="md" > 
+        <ResourceItem></ResourceItem>
+      </Grid>
+
+    </>
+  );
+};
 
 export default Resources;
