@@ -16,7 +16,7 @@
 <h3 align="center">Scipture Support</h3>
 
 <p align="center">
-Scripture Support is a Progressive Web App that offers comfort through God's Word. Receive a personalized Bible verse based on your current feelings from the input box, to encourage and uplift you.
+Scripture Support offers comfort through God's Word. Receive a personalized Bible verse based on your current feelings from the input box, to encourage and uplift you. The app design ensures a comforting experience that you can rely on anytime, anywhere.
 <br />
 <br />
 <a href="https://monicaalyssa.github.io/scripture-support/">Live Site</a>
@@ -30,6 +30,9 @@ Scripture Support is a Progressive Web App that offers comfort through God's Wor
 - **Add to Home Screen:** Users can add the app to their home screen as a Progressive Web App (PWA) for quick, easy access.
 - **Offline Access:** Full functionality is available even without an internet connection.
 - **Generate More Responses:** Generate additional scriptures based on the same feelings.
+- **Copy Scripture:** Copy the currently displayed scripture to your clipboard.
+- **Resources Page:** Access a list of resources to deepen your connection with the Bible.
+
 
 ## Technologies & Dependencies
 
