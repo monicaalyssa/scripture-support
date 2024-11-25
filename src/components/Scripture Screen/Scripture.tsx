@@ -1,6 +1,7 @@
 import { Box, Button, Flex, Text, Title, Tooltip, Transition } from "@mantine/core";
 import { IconMoodPlus } from "@tabler/icons-react";
 import { useEffect, useState } from "react";
+import classes from "./Scripture.module.css"
 
 interface emotionsProps {
     selectedEmotions: string[];
@@ -77,7 +78,7 @@ const Scripture: React.FC<emotionsProps> = ({ inputScreen, setMounted, setInputS
             <Transition transition="fade" mounted={newScriptureMounted} duration={400}>
             {(styles) => (
             <Box style={styles} pb="sm" mt="xs"> 
-                <Title order={4}>"{randomScripture.verse}"</Title>
+                <Title className={classes.test} order={4}>"{randomScripture.verse}"</Title>
                 <Flex mt="md" mb="sm" direction="row" align="center" justify="center" gap={6}>
                 <Text size="md">({randomScripture.location}</Text> 
                 <Text c="blue" size="md">{randomScripture.translation}<Text size="md" c="#000" span>)</Text></Text>
@@ -90,7 +91,7 @@ const Scripture: React.FC<emotionsProps> = ({ inputScreen, setMounted, setInputS
         )}
         <Flex direction="column" justify="center" gap="xs">
         <Button size="sm" onClick={backToHome} style={{alignItems: "center"}}  rightSection={<IconMoodPlus  style={{marginLeft: "-0.3rem" }}  stroke={2.2} size={18} />} variant="light">Add Feelings</Button>
-        <Button size="sm" onClick={giveMeAnother} >Give Me Another <Text mt={1} ml={6} span>✨</Text></Button>
+        <Button size="sm" onClick={giveMeAnother}>  Give Me Another <Text mt={1} ml={6} span>✨</Text></Button>
         </Flex>
         </Box>
         </Box>
