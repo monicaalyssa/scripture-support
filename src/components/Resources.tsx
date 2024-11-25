@@ -8,10 +8,9 @@ function Resources() {
         <ResourceItem></ResourceItem>
       </Grid>
 
-      <Grid px="xl" mx="xl" justify="center" hiddenFrom="md" > 
+      <Grid justify="center" gutter={30} hiddenFrom="md" > 
         <ResourceItem></ResourceItem>
       </Grid>
-
     </>
   );
 };
