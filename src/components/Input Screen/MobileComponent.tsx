@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { SAD_SCRIPTURES } from "../../constants/scriptures.tsx";
 import { ANXIOUS_SCRIPTURES } from "../../constants/scriptures.tsx";
 import { SCARED_SCRIPTURES } from "../../constants/scriptures.tsx";
+import { HEARTBROKEN_SCRIPTURES } from "../../constants/scriptures.tsx";
 import classes from "./MainScreen.module.css";
 
 const MobileComponent = () => {
@@ -38,6 +39,10 @@ const MobileComponent = () => {
       combinedSciptureLists = [...combinedSciptureLists, ...SCARED_SCRIPTURES];
     }
 
+    if (selectedEmotions.includes("Heartbroken")) {
+      combinedSciptureLists = [...combinedSciptureLists, ...HEARTBROKEN_SCRIPTURES];
+    }
+
     let randomIndex;
     let selectedScripture;
     do {
@@ -62,7 +67,7 @@ const MobileComponent = () => {
                     <Title order={2}>I'm feeling...</Title>
                     <MultiSelect
                       placeholder="How are you feeling?"
-                      data={["Sad", "Anxious", "Scared", "Placeholder"]}
+                      data={["Sad", "Anxious", "Scared", "Heartbroken"]}
                       searchable
                       clearable
                       size="md"
