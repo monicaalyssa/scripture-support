@@ -1,4 +1,4 @@
-import { ActionIcon, Box, Button, Flex, Image, Text, Title, Tooltip, Transition } from "@mantine/core";
+import { ActionIcon, Box, Button, Flex, Text, Title, Tooltip, Transition } from "@mantine/core";
 import { IconMoodPlus, IconCopy, IconCopyCheck } from "@tabler/icons-react";
 import { useEffect, useState } from "react";
 import classes from "./Scripture.module.css"
@@ -87,6 +87,9 @@ const Scripture: React.FC<emotionsProps> = ({ inputScreen, setMounted, setInputS
         {(styles) => (
         <Box style={styles}>
         <Box hiddenFrom="xs">
+        <ActionIcon onClick={copyScripture} color="gray" size="lg" variant="transparent">
+            {copied ? (<IconCopyCheck color="#868e96" size={20} />) : (<IconCopy color="#868e96" size={20} />)}    
+        </ActionIcon>
         { randomScripture ? (
             <Transition transition="fade" mounted={newScriptureMounted} duration={400}>
             {(styles) => (
