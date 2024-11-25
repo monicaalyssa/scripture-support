@@ -1,5 +1,5 @@
-import { Box, Button, Flex, Text, Title, Tooltip, Transition } from "@mantine/core";
-import { IconMoodPlus } from "@tabler/icons-react";
+import { ActionIcon, Box, Button, Flex, Image, Text, Title, Tooltip, Transition } from "@mantine/core";
+import { IconMoodPlus, IconCopy, IconCopyCheck } from "@tabler/icons-react";
 import { useEffect, useState } from "react";
 import classes from "./Scripture.module.css"
 
@@ -15,6 +15,7 @@ interface emotionsProps {
 const Scripture: React.FC<emotionsProps> = ({ inputScreen, setMounted, setInputScreen, randomScripture, scripturePicker }) => {
     const [sciptureMounted, setScriptureMounted] = useState<boolean>(false)
     const [newScriptureMounted, setNewScriptureMounted] = useState<boolean>(true)
+    const [copied, setCopied] = useState<boolean>(false)
 
     useEffect(() => {
         setScriptureMounted(true)
@@ -36,6 +37,15 @@ const Scripture: React.FC<emotionsProps> = ({ inputScreen, setMounted, setInputS
             setNewScriptureMounted(true); 
         }, 300);
     }
+    const scriptureCopy = ("\"" + randomScripture?.verse + "\" (" + randomScripture?.location + " " + randomScripture?.translation + ")")
+
+    const copyScripture = () => {
+        navigator.clipboard.writeText(scriptureCopy)
+        setCopied(true)
+        setTimeout(() => {
+            setCopied(false)
+        }, 2000)
+    }
 
     return(
         <>
@@ -46,8 +56,11 @@ const Scripture: React.FC<emotionsProps> = ({ inputScreen, setMounted, setInputS
         { randomScripture ? (
             <Transition transition="fade" mounted={newScriptureMounted} duration={400}>
             {(styles) => (
-            <Box style={styles} mb="xl" pb="md" pt="sm" mt="sm"> 
-                <Title order={3}>"{randomScripture.verse}"</Title>
+            <Box style={styles} mb="xl" pb="md" mt="sm"> 
+                <ActionIcon onClick={copyScripture} mb="xs" color="gray" size="lg" variant="transparent">
+                    {copied ? (<IconCopyCheck color="#868e96" size={24} />) : (<IconCopy color="#868e96" size={24} />)}    
+                </ActionIcon>
+                <Title mt="xs" order={3}>"{randomScripture.verse}"</Title>
                 <Flex mt="lg" direction="row" align="center" justify="center" gap={6}>
                 <Text  size="xl">({randomScripture.location}</Text> 
                 <Tooltip withArrow position="bottom-start" offset={-3} label="Translation"
