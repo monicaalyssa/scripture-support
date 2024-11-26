@@ -42,7 +42,7 @@ Scripture Support offers comfort through God's Word. Receive a personalized Bibl
 
 <a href="https://vite.dev/">Vite</a>: Accelerates development and optimizes asset bundling. During development, it provides instant updates without the need for page reloads.
 
-<a href="https://vite-pwa-org.netlify.app/">Vite-Plugin-PWA</a>: Enhances the application with Progressive Web App (PWA) capabilities, providing offline functionality, automatic service worker generation and updates, and home screen installation for an app-like experience.
+<a href="https://vite-pwa-org.netlify.app/">Vite-Plugin-PWA</a>: Enhances the application with Progressive Web App (PWA) capabilities, providing offline functionality, service worker updates, and home screen installation for an app-like experience.
 
 ### UI Components
 
