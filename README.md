@@ -19,7 +19,9 @@
 Scripture Support offers comfort through God's Word. Receive a personalized Bible verse based on your current feelings from the input box, to encourage and uplift you. The app design ensures a comforting experience that you can rely on anytime, anywhere.
 <br />
 <br />
-<a href="https://monicaalyssa.github.io/scripture-support/">Live Site</a>
+<a href="https://monicaalyssa.github.io/scripture-support/">Live Site</a> · 
+<a href="#demo">Demo</a>
+
 </div>
 
 
@@ -47,3 +49,8 @@ Scripture Support offers comfort through God's Word. Receive a personalized Bibl
 ### UI Components
 
 <a href="https://mantine.dev/">Mantine</a>: React component library that provides customizable components to quickly and efficiently build the UI components of the app.
+
+## Demo <a name="demo"></a>
+
+https://github.com/user-attachments/assets/8cf74134-523c-4449-9a41-05cc6716e088
+
